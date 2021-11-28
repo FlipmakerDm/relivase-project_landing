@@ -1,0 +1,15 @@
+* {
+  font-size: 100%;
+  /* list-style: 1; */
+  font-size: 16p
+  font-family: Montserrat;
+  box-sizing: border-box;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+._container {
+  max-width: 1046px;
+  margin: 0px auto;
+}
