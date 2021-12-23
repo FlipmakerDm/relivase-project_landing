@@ -130,7 +130,12 @@
 }
 .main-block_buttons {
   display: inline-flex;
+  cursor: pointer;
 }
+.main-block_buttons:hover {
+  opacity: 0.9;
+}
+
 .main-block_button {
   border-radius: 37px;
   display: flex;
@@ -148,6 +153,7 @@
   background: #ff7b47;
   color: #fff;
 }
+
 .main-block_button_bouder {
 }
 .main-block_image {
