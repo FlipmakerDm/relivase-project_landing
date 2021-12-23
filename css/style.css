@@ -11,6 +11,8 @@
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 ._container {
   max-width: 1046px;
@@ -18,6 +20,18 @@
   padding: 0 15px;
   box-sizing: content-box;
 }
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -30,6 +44,11 @@
   display: flex;
   min-height: 104px;
   align-items: center;
+}
+@media (max-width: 479px) {
+  .header__container {
+    min-height: 85;
+  }
 }
 
 .header_logo {
@@ -72,4 +91,69 @@
   color: #737373;
   font-weight: 600;
   line-height: calc(24 / 14 * 100%);
+}
+/* -page--------------------------------*/
+.page {
+  flex: 1 1 auto;
+}
+.paige_main-block {
+}
+/* ------------подвал-----------------*/
+.footer {
+}
+/* --------main_block--------*/
+.main-block {
+  position: relative;
+}
+.paige_main-container {
+}
+.main-block_body {
+  padding: 184px 0 191px 0;
+  position: relative;
+  z-index: 2;
+  max-width: 509px;
+}
+.main-block_body > *:not(:last-child) {
+  margin: 0 0 35px 0;
+}
+
+.main-block_title {
+  font-size: 58px;
+  line-height: calc(80 / 58 * 100%);
+  letter-spacing: 0.2px;
+  font-weight: 800;
+}
+.main-block_text {
+  color: #737373;
+  font-size: 20px;
+  line-height: 150%;
+}
+.main-block_buttons {
+  display: inline-flex;
+}
+.main-block_button {
+  border-radius: 37px;
+  display: flex;
+  min-height: 48px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 150%;
+  padding: 5px 36px;
+  margin: 0px 10px;
+}
+.main-block_button_orange {
+  background: #ff7b47;
+  color: #fff;
+}
+.main-block_button_bouder {
+}
+.main-block_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
 }
