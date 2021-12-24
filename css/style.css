@@ -33,7 +33,8 @@
 }
 
 .header {
-  position: absolute;
+  position: fixed;
+  background-color: rgba(250, 249, 249, 0.342);
   width: 100%;
   left: 0;
   top: 0;
@@ -98,6 +99,11 @@
 }
 .paige_main-block {
 }
+.page_services {
+  position: relative;
+  z-index: 2;
+  margin: -111px 0 0 0;
+}
 /* ------------подвал-----------------*/
 .footer {
 }
@@ -111,7 +117,13 @@
   padding: 184px 0 191px 0;
   position: relative;
   z-index: 2;
-  max-width: 509px;
+  max-width: 400px;
+}
+
+@media (max-width: 992px) {
+  .main-block_body {
+    padding: 120px 0 191px 0;
+  }
 }
 .main-block_body > *:not(:last-child) {
   margin: 0 0 35px 0;
@@ -123,17 +135,26 @@
   letter-spacing: 0.2px;
   font-weight: 800;
 }
+@media (max-width: 479px) {
+  .main-block_title {
+    font-size: 42px;
+  }
+}
+
 .main-block_text {
   color: #737373;
   font-size: 20px;
   line-height: 150%;
 }
+@media (max-width: 479px) {
+  .main-block_text {
+    color: #313131;
+  }
+}
 .main-block_buttons {
   display: inline-flex;
-  cursor: pointer;
-}
-.main-block_buttons:hover {
-  opacity: 0.9;
+  flex-wrap: wrap;
+  margin: -10px 0;
 }
 
 .main-block_button {
@@ -147,14 +168,31 @@
   text-align: center;
   line-height: 150%;
   padding: 5px 36px;
-  margin: 0px 10px;
+  margin: 10px 0;
+}
+
+@media (max-width: 479px) {
+  .main-block_button {
+    flex: 1 1 100%;
+  }
+}
+.main-block_button:not(:last-child) {
+  margin-right: 10px;
 }
 .main-block_button_orange {
   background: #ff7b47;
   color: #fff;
 }
+.main-block_button_orange:hover {
+  opacity: 0.9;
+}
 
 .main-block_button_bouder {
+  border: 1px solid #0d5c63;
+  color: #0d5c63;
+}
+.main-block_button_bouder:hover {
+  opacity: 0.9;
 }
 .main-block_image {
   position: absolute;
@@ -162,4 +200,65 @@
   height: 100%;
   left: 0px;
   top: 0px;
+}
+@media (max-width: 1300px) {
+  .main-block_image img {
+    object-position: right;
+  }
+}
+@media (max-width: 992px) {
+  .main-block_image {
+    opacity: 0.5;
+  }
+}
+/*---------------*/
+
+.services {
+}
+.services_container {
+}
+.services_body {
+  display: flex;
+  margin: 0 -15px;
+}
+.services_column {
+  display: flex;
+  padding: 0 15px;
+  flex: 0 1 33.333%;
+}
+.service_item {
+  height: 100%;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  padding: 35px;
+}
+
+.item-service {
+}
+.item-service > *:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+.item-service_green {
+  background-color: #0d5c63;
+}
+.item-service_green .item-service_title {
+  color: #fff;
+}
+.item-service_green .item-service_text {
+  color: #fff;
+}
+.item-service_icon {
+}
+.item-service_title {
+  font-weight: 700;
+  color: #252b42;
+  letter-spacing: 0.1px;
+  font-size: 24px;
+  line-height: 133%;
+}
+.item-service_text {
+  color: #737373;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 }
