@@ -5,7 +5,7 @@
   font-family: Montserrat;
   color: black;
   text-decoration: none;
-
+  box-sizing: border-box;
   list-style-type: none;
 }
 .wrapper {
@@ -16,7 +16,7 @@
 }
 ._container {
   max-width: 1046px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 0 15px;
   box-sizing: content-box;
 }
@@ -31,7 +31,7 @@
   top: 0px;
   object-fit: cover;
 }
-
+/*------------шапка---------*/
 .header {
   position: fixed;
   background-color: rgba(250, 249, 249, 0.342);
@@ -215,19 +215,18 @@
 
 .services {
 }
+
 .services_container {
 }
 .services_body {
   display: flex;
-  margin: 0 -15px;
+  margin: 0px -15px;
 }
 .services_column {
-  display: flex;
-  padding: 0 15px;
+  padding: 0px 15px;
   flex: 0 1 33.333%;
 }
 .service_item {
-  height: 100%;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   background-color: #fff;
   padding: 35px;
@@ -260,5 +259,5 @@
   color: #737373;
   font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 142%;
 }
