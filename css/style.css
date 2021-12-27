@@ -798,7 +798,7 @@
   align-items: center;
   background-color: #fff;
   padding: 50px 15px;
-  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.192);
+  box-shadow: 4px 4px 19px rgba(0, 0, 0, 0.192);
 }
 .item-getintouch_purp {
   background: #252b42;
