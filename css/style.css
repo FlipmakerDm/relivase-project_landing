@@ -743,8 +743,13 @@
   align-items: center;
   text-align: center;
   color: #fff;
+  transition: all 0.3s ease 0s;
   padding: 0 22px;
 }
+.subscribe_button:hover {
+  background-color: #b1461c;
+}
+
 @media (max-width: 810px) {
   .subscribe_button {
     padding: 0 10px;
@@ -926,4 +931,119 @@
 }
 .contact_button:hover {
   background-color: #d36337;
+}
+
+/*FOOTER---------------------*/
+
+.footer {
+}
+.footer_top {
+  background-color: #17213c;
+  padding: 50px;
+}
+
+.footer_main {
+}
+.footer_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.footer_column {
+  padding: 0 15px;
+  flex: 0 1 20%;
+  min-width: 200px;
+}
+
+.footer_label {
+  color: #fff;
+  font-weight: 700;
+  line-height: 150%;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+.footer_menu {
+}
+
+.menu-footer {
+}
+.menu-footer_list {
+  padding: 0;
+}
+
+.menu-footer_list:hover {
+  transform: scale(1);
+}
+.menu-footer_item {
+}
+
+.menu-footer_item:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+.menu-footer_link {
+  color: #fff;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+}
+
+.footer_contacts {
+}
+.contacts-footer {
+  flex-direction: column;
+}
+.contacts-footer_item {
+  padding: 0 0 0 34px;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  color: #fff;
+}
+.contacts-footer_item:hover {
+  transform: scale(1.1);
+}
+
+.contacts-footer_item:not(:last-child) {
+  margin: 0 0 12px 0;
+}
+
+.contacts-footer_item_phone {
+  background: url(/img/footer/footer\ 1.png) left no-repeat;
+}
+.contacts-footer_item_map {
+  background: url(/img/footer/footer\ 2.png) left no-repeat;
+  white-space: nowrap;
+  width: 190px;
+  overflow: hidden;
+}
+.contacts-footer_item_email {
+  background: url(/img/footer/footer\ 3.png) left no-repeat;
+}
+
+.footer_bottom {
+  padding: 25px 0;
+}
+@media (min-width: 767px) {
+  .footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer_copy {
+  color: #737373;
+  line-height: 171%;
+}
+.footer_social {
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social_item:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+.social_item:hover {
+  transform: scale(1.1);
 }
