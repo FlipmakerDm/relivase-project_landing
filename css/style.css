@@ -220,7 +220,7 @@
   text-align: center;
   line-height: 150%;
   padding: 5px 36px;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 
 @media (max-width: 479px) {
@@ -228,9 +228,7 @@
     flex: 1 1 100%;
   }
 }
-.main-block_button:not(:last-child) {
-  margin-right: 10px;
-}
+
 .main-block_button_orange {
   background: #ff7b47;
   color: #fff;
@@ -656,7 +654,7 @@
   padding: 0 0 20px 0;
 }
 .subscribe:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -912,7 +910,6 @@
 .contact_title:not(:last-child) {
   margin: 0 0 10px 0;
 }
-
 .contact_text {
   color: #737373;
   line-height: 142%;
